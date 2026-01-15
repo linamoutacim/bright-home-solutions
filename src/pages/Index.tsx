@@ -39,6 +39,26 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Full-width Cinematic Image */}
+      <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
+        <img
+          src="/full-width-lifestyle.png"
+          alt="Lumini Modern Living"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/10" />
+        <div className="absolute inset-0 flex items-center justify-center text-center p-4">
+          <div className="max-w-4xl space-y-6 animate-fade-in">
+            <h2 className="text-4xl md:text-6xl font-black text-white drop-shadow-2xl">
+              L'Élégance de l'Intelligence
+            </h2>
+            <p className="text-xl text-white/90 font-medium max-w-2xl mx-auto drop-shadow-lg">
+              Une immersion totale dans le confort moderne, où chaque détail est pensé pour votre bien-être.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Realistic Presentation Section 1: Lifestyle */}
       <section className="py-24 bg-white overflow-hidden">
         <div className="container">
