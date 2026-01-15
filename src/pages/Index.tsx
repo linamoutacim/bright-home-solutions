@@ -60,56 +60,6 @@ const Index = () => {
       </section>
 
 
-
-      {/* Realistic Presentation Section 2: App Control */}
-      <section className="py-24 bg-primary/5 overflow-hidden">
-        <div className="container">
-          <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
-            <div className="flex-1 space-y-8 animate-slide-up">
-              <div className="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-black tracking-wider uppercase">
-                Un contrôle total
-              </div>
-              <h2 className="text-3xl md:text-5xl font-black text-foreground leading-tight">
-                La puissance au <br />
-                <span className="text-accent underline decoration-accent/30 underline-offset-8">bout des doigts.</span>
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Ajustez la sensibilité, programmez des horaires ou changez la température de couleur directement depuis votre smartphone. Une interface intuitive conçue pour simplifier votre quotidien.
-              </p>
-              <div className="space-y-4 pt-4">
-                {[
-                  "Contrôle à distance Illimité",
-                  "Programmation Intelligente",
-                  "Économie d'Énergie Visible",
-                ].map((text, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-accent/20 text-accent rounded-full flex items-center justify-center">
-                      <CheckCircle2 className="w-4 h-4" />
-                    </div>
-                    <span className="font-bold opacity-80">{text}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex-1 relative group animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              <div className="absolute inset-0 bg-accent/20 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700" />
-              <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
-                <img
-                  src="/app-control.png"
-                  alt="Lumini App Control"
-                  className="w-full object-cover aspect-[4/5] hover:scale-110 transition-transform duration-[2s]"
-                />
-                <div className="absolute top-8 right-8">
-                  <span className="bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-black uppercase shadow-glow animate-pulse">
-                    Nouveau : App V2.0
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <Benefits />
 
       <ComparisonTable />
