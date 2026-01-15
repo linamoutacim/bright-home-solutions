@@ -59,55 +59,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Realistic Presentation Section 1: Lifestyle */}
-      <section className="py-24 bg-white overflow-hidden">
-        <div className="container">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
-            <div className="flex-1 space-y-8 animate-slide-up">
-              <div className="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-black tracking-wider uppercase">
-                Vivez le Futur
-              </div>
-              <h2 className="text-3xl md:text-5xl font-black text-foreground leading-tight">
-                Une technologie qui <br />
-                <span className="text-accent underline decoration-accent/30 underline-offset-8">s'adapte à votre vie.</span>
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Finis les couloirs sombres ou les mains encombrées devant un interrupteur. <strong>Lumini</strong> détecte votre présence à travers les obstacles pour un confort absolu. On rentre, ça s'allume. On sort, ça s'éteint.
-              </p>
-              <div className="flex items-center gap-6 pt-4">
-                <div className="flex -space-x-3">
-                  {[1, 2, 3, 4].map(i => (
-                    <div key={i} className="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-secondary">
-                      <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="User" />
-                    </div>
-                  ))}
-                  <div className="w-12 h-12 rounded-full border-4 border-white bg-accent flex items-center justify-center text-accent-foreground text-xs font-bold font-black">
-                    +10k
-                  </div>
-                </div>
-                <div className="text-sm font-bold text-foreground/70">
-                  Adopté par des milliers <br /> de foyers en France.
-                </div>
-              </div>
-            </div>
-            <div className="flex-1 relative group animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              <div className="absolute inset-0 bg-accent/20 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700" />
-              <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
-                <img
-                  src="/lifestyle.png"
-                  alt="Lumini in home"
-                  className="w-full object-cover aspect-[4/5] hover:scale-110 transition-transform duration-[2s]"
-                />
-                <div className="absolute bottom-8 left-8 right-8 p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl">
-                  <p className="text-white font-medium italic">
-                    "Une ambiance chaleureuse qui vous accueille dès votre arrivée."
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Realistic Presentation Section 2: App Control */}
       <section className="py-24 bg-primary/5 overflow-hidden">
