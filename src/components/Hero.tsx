@@ -76,16 +76,19 @@ const Hero = () => {
         {/* Right Image Content */}
         <div className="flex-1 relative animate-float">
           <div className="absolute inset-0 bg-accent/20 blur-[100px] rounded-full scale-75" />
-          <div className="relative z-10 p-4 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] shadow-2xl">
+          <div className="relative z-10 p-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] shadow-2xl overflow-hidden group">
             <img
-              src="/lumini-bulb.png"
-              alt="Lumini Smart Bulb"
-              className="w-full max-w-md mx-auto rounded-[2.5rem] shadow-glow transform transition-transform duration-700 hover:rotate-2 hover:scale-105"
+              src="/hero-lifestyle.png"
+              alt="Lumini Smart Experience"
+              className="w-full h-full object-cover rounded-[2.5rem] shadow-glow transform transition-transform duration-[4s] group-hover:scale-110"
             />
+            {/* Overlay gradient for depth */}
+            <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent pointer-events-none" />
+
             {/* Floating badge over image */}
-            <div className="absolute -bottom-6 -right-6 p-6 bg-accent rounded-3xl shadow-glow animate-bounce-slow">
-              <div className="text-sm font-black text-accent-foreground uppercase tracking-tighter">Premium</div>
-              <div className="text-2xl font-black text-accent-foreground leading-none">Radar v2</div>
+            <div className="absolute -bottom-2 -right-2 p-5 bg-accent rounded-3xl shadow-glow animate-bounce-slow">
+              <div className="text-[10px] font-black text-accent-foreground uppercase tracking-tighter">Connecté</div>
+              <div className="text-xl font-black text-accent-foreground leading-none">Smart Mode</div>
             </div>
           </div>
         </div>
