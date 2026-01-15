@@ -1,4 +1,4 @@
-import { Radar, BatteryCharging, Wrench, Moon, Users, ThermometerSun } from "lucide-react";
+import { Radar, PiggyBank, Wrench, Zap, ShieldAlert, Clock3 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Benefits = () => {
@@ -11,7 +11,7 @@ const Benefits = () => {
       description: t("benefits.items.radar.desc"),
     },
     {
-      icon: BatteryCharging,
+      icon: PiggyBank,
       title: t("benefits.items.energy.title"),
       description: t("benefits.items.energy.desc"),
     },
@@ -21,50 +21,49 @@ const Benefits = () => {
       description: t("benefits.items.easy.desc"),
     },
     {
-      icon: Moon,
-      title: t("benefits.items.night.title"),
-      description: t("benefits.items.night.desc"),
+      icon: Zap,
+      title: t("benefits.items.instant.title"),
+      description: t("benefits.items.instant.desc"),
     },
     {
-      icon: Users,
-      title: t("benefits.items.seniors.title"),
-      description: t("benefits.items.seniors.desc"),
+      icon: ShieldAlert,
+      title: t("benefits.items.security.title"),
+      description: t("benefits.items.security.desc"),
     },
     {
-      icon: ThermometerSun,
-      title: t("benefits.items.temps.title"),
-      description: t("benefits.items.temps.desc"),
+      icon: Clock3,
+      title: t("benefits.items.longlife.title"),
+      description: t("benefits.items.longlife.desc"),
     },
   ];
 
   return (
-    <section className="py-24 bg-secondary">
+    <section className="py-24 bg-[#f9fafb]">
       <div className="container">
         {/* Section header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">{t("benefits.badge")}</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#0c1221] mb-6">
             {t("benefits.title")}
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-gray-500 text-lg md:text-xl font-medium">
             {t("benefits.subtitle")}
           </p>
         </div>
 
         {/* Benefits grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl bg-card shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
+              className="p-10 rounded-3xl bg-white border border-[#f1f1f1] hover:shadow-xl transition-all duration-300"
             >
-              <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
-                <benefit.icon className="w-7 h-7 text-accent" />
+              <div className="w-16 h-16 rounded-2xl bg-[#D4A017]/10 flex items-center justify-center mb-8">
+                <benefit.icon className="w-8 h-8 text-[#D4A017]" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+              <h3 className="text-2xl font-bold text-[#0c1221] mb-4">
                 {benefit.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-gray-500 leading-relaxed text-base font-medium">
                 {benefit.description}
               </p>
             </div>

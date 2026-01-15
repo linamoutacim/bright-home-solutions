@@ -1,129 +1,142 @@
 {
     "header": {
-        "offers": "Nos Offres",
-        "howItWorks": "Comment ça marche ?",
-        "reviews": "Avis Clients",
-        "faq": "FAQ",
+        "home": "Accueil",
+        "howItWorks": "Comment ça marche",
+        "contact": "Contact",
         "order": "Commander"
     },
     "hero": {
-        "badge": "Nouveau : Technologie Radar Avancée",
-        "title": "Votre maison obéit à",
-        "titleAccent": "votre smartphone",
-        "subtitle": "Prenez le contrôle total de votre éclairage. Lumini : l'ampoule connectée intelligente qui se pilote du bout des doigts, pour un confort et une sécurité inégalés.",
-        "ctaDiscover": "Découvrir l'offre",
-        "ctaHow": "Comment ça marche ?",
-        "benefit1": "Détection Radar Précise",
-        "benefit2": "Économie d'Énergie",
-        "benefit3": "Installation en 30 sec"
+        "badge": "NOUVEAU",
+        "title": "La lumière qui s'allume",
+        "titleAccent": "devant vous",
+        "subtitle": "Éclairez votre chemin automatiquement grâce à la détection radar 360°. Une sécurité accrue et 80% d'économie d'énergie pour votre maison.",
+        "ctaOrder": "Commander - 14.90€",
+        "ctaLearnMore": "En savoir plus",
+        "socialProof": "Recommandé par +100 clients"
     },
     "common": {
         "excellent": "Excellent 4.8/5",
-        "satisfiedClients": "10,000+ Clients satisfaits",
-        "radarTech": "Technologie Radar de pointe"
+        "satisfiedClients": "+10,000 clients satisfaits",
+        "radarTech": "Technologie Radar 360°"
     },
     "benefits": {
-        "badge": "Pourquoi Lumini ?",
-        "title": "La technologie au service de votre confort",
-        "subtitle": "Une ampoule intelligente qui s'adapte à votre vie quotidienne",
+        "title": "Pourquoi choisir LumiSense ?",
+        "subtitle": "Une technologie de pointe condensée dans une ampoule standard pour simplifier votre quotidien.",
         "items": {
             "radar": {
-                "title": "Détection Radar",
-                "desc": "Plus précis que l'infrarouge classique. Détecte même les mouvements légers à travers les obstacles."
+                "title": "Radar 360°",
+                "desc": "Détecteur de mouvement ultra-sensible qui traverse les obstacles légers et détecte votre présence instantanément."
             },
             "energy": {
-                "title": "Économie d'Énergie",
-                "desc": "S'éteint automatiquement après 30 secondes. Fini les lumières allumées pour rien."
+                "title": "80% d'Économie",
+                "desc": "Ne payez que pour la lumière dont vous avez besoin. S'éteint automatiquement après votre passage."
             },
             "easy": {
                 "title": "Installation Facile",
-                "desc": "Se visse comme une ampoule classique. Pas d'électricien, pas de travaux."
+                "desc": "Pas de travaux, pas de WiFi. Vissez simplement LumiSense sur n'importe quelle douille E27 standard."
             },
-            "night": {
-                "title": "Idéale la Nuit",
-                "desc": "Parfaite pour les toilettes, couloirs et escaliers. Plus besoin de chercher l'interrupteur."
+            "instant": {
+                "title": "Allumage Instantané",
+                "desc": "Fini le temps de chauffe. La lumière est à 100% de sa puissance dès la première milliseconde."
             },
-            "seniors": {
-                "title": "Sécurité Seniors",
-                "desc": "Prévient les chutes dans les escaliers sombres. Tranquillité d'esprit pour toute la famille."
+            "security": {
+                "title": "Sécurité Accrue",
+                "desc": "Dissuade les intrusions en simulant une présence et en éclairant les zones sombres."
             },
-            "temps": {
-                "title": "2 Températures",
-                "desc": "Blanc chaud pour l'intérieur, blanc froid pour garage et cave. Adaptée à chaque pièce."
+            "longlife": {
+                "title": "Longue Durée",
+                "desc": "Conçue avec des composants premium pour durer jusqu'à 25,000 heures d'utilisation."
             }
-        }
-    },
-    "comparison": {
-        "badge": "Le Match",
-        "title": "Pourquoi choisir",
-        "subtitle": "Comparez et voyez la différence par vous-même. Lumini redéfinit l'éclairage domestique.",
-        "footer": "\"Le radar Lumini détecte les mouvements à 360° même à travers des rideaux, là où l'infrarouge échoue systématiquement.\"",
-        "columns": {
-            "features": "Fonctionnalités",
-            "lumini": "Lumini",
-            "infrared": "Infrarouge",
-            "classic": "Classique"
-        },
-        "features": {
-            "radar": "Détection Radar (360°)",
-            "obstacles": "Détection à travers les obstacles",
-            "smartphone": "Contrôle via Smartphone",
-            "installation": "Installation sans travaux",
-            "savings": "Économie d'énergie (>80%)",
-            "lifespan": "Durée de vie 10 ans +"
-        },
-        "labels": {
-            "sometimes": "Parfois",
-            "rarely": "Rarement"
         }
     },
     "pricing": {
-        "badge": "Nos Offres",
-        "title": "Choisissez votre pack",
-        "subtitle": "Plus vous commandez, plus vous économisez. Livraison offerte dès 3 ampoules.",
-        "popular": "LE PLUS POPULAIRE",
-        "quantity": "ampoule",
-        "quantity_plural": "ampoules",
-        "unitPrice": "soit {{price}}€ l'unité",
+        "title": "Nos Offres Exclusives",
+        "subtitle": "Choisissez le pack adapté à votre logement.",
+        "popular": "PLUS POPULAIRE",
         "shipping": "Livraison {{price}}€",
-        "freeShipping": "Livraison OFFERTE",
-        "ctaBuy": "Acheter maintenant",
-        "ctaAdd": "Ajouter au panier",
-        "trust": {
-            "payment": "Paiement sécurisé",
-            "shipping": "Livraison suivie",
-            "guarantee": "Satisfait ou remboursé"
-        },
+        "freeShipping": "Livraison Offerte",
+        "ctaSelect": "Choisir ce pack",
+        "ctaOrder": "Commander (Best-seller)",
+        "unitPrice": "L'unité",
         "offers": {
-            "pack1": {
+            "discovery": {
                 "name": "Découverte",
+                "subtitle": "Pour essayer",
+                "price": "14.90€",
                 "features": [
-                    "1 Ampoule LED Radar",
+                    "1 Ampoule LumiSense",
                     "Garantie 2 ans",
-                    "Guide d'installation"
+                    "Satisfait ou remboursé"
                 ]
             },
-            "pack3": {
-                "name": "Lieux de Passage",
+            "comfort": {
+                "name": "Pack Confort",
+                "subtitle": "Idéal pour appartement",
+                "price": "29.90€",
+                "savings": "Économisez 15%",
                 "features": [
-                    "3 Ampoules LED Radar",
-                    "Livraison GRATUITE",
-                    "Garantie 2 ans",
-                    "Guide d'installation",
-                    "Support prioritaire"
+                    "3 Ampoules LumiSense",
+                    "Livraison Prioritaire",
+                    "Garantie 2 ans"
                 ]
             },
-            "pack6": {
-                "name": "Maison Complète",
+            "home": {
+                "name": "Pack Maison",
+                "subtitle": "Équipement complet",
+                "price": "49.90€",
+                "savings": "Économisez 45%",
                 "features": [
-                    "6 Ampoules LED Radar",
-                    "Livraison GRATUITE",
-                    "Garantie 2 ans",
-                    "Guide d'installation",
-                    "Support prioritaire",
-                    "Douille adaptatrice offerte"
+                    "6 Ampoules LumiSense",
+                    "Livraison Offerte",
+                    "Garantie 2 ans"
                 ]
             }
         }
+    },
+    "reviews": {
+        "title": "4.8/5 par nos clients vérifiés",
+        "items": [
+            {
+                "name": "Marc D.",
+                "status": "Achat vérifié",
+                "text": "Installée dans mon couloir et mon garage. C'est magique, plus besoin de chercher l'interrupteur les bras chargés de courses."
+            },
+            {
+                "name": "Sophie L.",
+                "status": "Achat vérifié",
+                "text": "J'avais peur que le détecteur soit trop sensible avec mon chat, mais c'est parfait. Ça ne s'allume que pour les humains."
+            },
+            {
+                "name": "Thomas M.",
+                "status": "Achat vérifié",
+                "text": "La lumière est chaude et agréable, rien à voir avec les LED blanches d'hôpital. Et la livraison a été super rapide."
+            },
+            {
+                "name": "Julie R.",
+                "status": "Achat vérifié",
+                "text": "Un vrai sentiment de sécurité quand je rentre tard le soir. L'entrée s'allume toute seule avant même que j'ouvre la porte."
+            }
+        ]
+    },
+    "faq": {
+        "title": "Questions Fréquentes",
+        "items": [
+            {
+                "question": "Quelle est la portée du radar ?",
+                "answer": "Le radar détecte les mouvements jusqu'à 8-10 mètres de distance à 360°, même à travers des obstacles légers."
+            },
+            {
+                "question": "L'ampoule s'allume-t-elle en plein jour ?",
+                "answer": "Non, elle dispose d'un capteur de luminosité intégré qui empêche l'allumage si la lumière naturelle est suffisante."
+            },
+            {
+                "question": "Quelle est la température de la couleur ?",
+                "answer": "Elle diffuse une lumière blanc chaud (3000K) pour une ambiance chaleureuse et accueillante."
+            },
+            {
+                "question": "Puis-je l'utiliser en extérieur ?",
+                "answer": "Oui, tant qu'elle est abritée dans un luminaire étanche."
+            }
+        ]
     }
 }

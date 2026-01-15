@@ -1,111 +1,77 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { CartDrawer } from "./CartDrawer";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleLanguage = () => {
-    const newLang = i18n.language === "fr" ? "en" : "fr";
-    i18n.changeLanguage(newLang);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToOffers = () => {
-    document.getElementById("offres")?.scrollIntoView({ behavior: "smooth" });
-    setIsMobileMenuOpen(false);
-  };
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-        ? "bg-background/95 backdrop-blur-md shadow-md py-3"
-        : "bg-transparent py-5"
+          ? "bg-[#0c1221]/90 backdrop-blur-md py-3 border-b border-white/5"
+          : "bg-transparent py-6"
         }`}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <span className={`text-2xl font-bold transition-colors ${isScrolled ? "text-foreground" : "text-white"}`}>
-            Lumi<span className="text-secondary">ni</span>
+          <div className="w-8 h-8 rounded-full border-2 border-[#D4A017] flex items-center justify-center">
+            <div className="w-2 h-2 rounded-full bg-[#D4A017]"></div>
+          </div>
+          <span className="text-xl font-bold text-white tracking-tight">
+            LumiSense
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="flex items-center gap-6">
-          <nav className="hidden md:flex items-center gap-8 mr-4">
-            <Link
-              to="/#offres"
-              className={`text-sm font-medium transition-colors hover:text-accent ${isScrolled ? "text-foreground" : "text-white/90"
-                }`}
-            >
-              {t("header.offers")}
-            </Link>
-            <Link
-              to="/comment-ca-marche"
-              className={`text-sm font-medium transition-colors hover:text-accent ${isScrolled ? "text-foreground" : "text-white/90"
-                }`}
-            >
-              {t("header.howItWorks")}
-            </Link>
-            <Link
-              to="/"
-              className={`text-sm font-medium transition-colors hover:text-accent ${isScrolled ? "text-foreground" : "text-white/90"
-                }`}
-            >
-              {t("header.reviews")}
-            </Link>
-            <Link
-              to="/"
-              className={`text-sm font-medium transition-colors hover:text-accent ${isScrolled ? "text-foreground" : "text-white/90"
-                }`}
-            >
-              {t("header.faq")}
-            </Link>
-            <Button
-              onClick={scrollToOffers}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-6 rounded-lg shadow-sm hover:shadow-glow transition-all"
-            >
-              {t("header.order")}
-            </Button>
-          </nav>
-
-          {/* Language Switcher */}
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={toggleLanguage}
-            className={`font-bold transition-colors ${isScrolled ? "text-foreground" : "text-white"}`}
+        <nav className="hidden lg:flex items-center gap-12">
+          <Link
+            to="/"
+            className="text-white/60 hover:text-white transition-colors text-sm font-medium"
           >
-            {i18n.language === "fr" ? "EN" : "FR"}
-          </Button>
+            {t("header.home")}
+          </Link>
+          <Link
+            to="/comment-ca-marche"
+            className="text-white/60 hover:text-white transition-colors text-sm font-medium"
+          >
+            {t("header.howItWorks")}
+          </Link>
+          <Link
+            to="/"
+            className="text-white/60 hover:text-white transition-colors text-sm font-medium"
+          >
+            {t("header.contact")}
+          </Link>
+        </nav>
 
-          {/* Cart Drawer */}
-          <div className={`${isScrolled ? "text-foreground" : "text-white"}`}>
+        {/* Right side info */}
+        <div className="flex items-center gap-4">
+          <div className="text-white">
             <CartDrawer />
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2 text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className={`w-6 h-6 ${isScrolled ? "text-foreground" : "text-white"}`} />
+              <X className="w-6 h-6" />
             ) : (
-              <Menu className={`w-6 h-6 ${isScrolled ? "text-foreground" : "text-white"}`} />
+              <Menu className="w-6 h-6" />
             )}
           </button>
         </div>
@@ -113,35 +79,29 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background shadow-lg py-6">
-          <nav className="container flex flex-col gap-4">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-[#0c1221] shadow-2xl py-8 border-t border-white/5 h-screen">
+          <nav className="container flex flex-col gap-6 text-center">
             <Link
-              to="/#offres"
-              className="text-foreground font-medium py-2"
+              to="/"
+              className="text-white text-xl font-bold py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              {t("header.offers")}
+              {t("header.home")}
+            </Link>
+            <Link
+              to="/comment-ca-marche"
+              className="text-white text-xl font-bold py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t("header.howItWorks")}
             </Link>
             <Link
               to="/"
-              className="text-foreground font-medium py-2"
+              className="text-white text-xl font-bold py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              {t("header.reviews")}
+              {t("header.contact")}
             </Link>
-            <Link
-              to="/"
-              className="text-foreground font-medium py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {t("header.faq")}
-            </Link>
-            <Button
-              onClick={scrollToOffers}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold w-full mt-2"
-            >
-              {t("header.order")}
-            </Button>
           </nav>
         </div>
       )}
