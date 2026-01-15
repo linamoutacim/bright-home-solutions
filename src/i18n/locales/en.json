@@ -76,5 +76,54 @@
             "sometimes": "Sometimes",
             "rarely": "Rarely"
         }
+    },
+    "pricing": {
+        "badge": "Our Offers",
+        "title": "Choose your pack",
+        "subtitle": "The more you order, the more you save. Free shipping from 3 bulbs.",
+        "popular": "MOST POPULAR",
+        "quantity": "bulb",
+        "quantity_plural": "bulbs",
+        "unitPrice": "only {{price}}€ each",
+        "shipping": "Shipping {{price}}€",
+        "freeShipping": "FREE Shipping",
+        "ctaBuy": "Buy Now",
+        "ctaAdd": "Add to cart",
+        "trust": {
+            "payment": "Secure Payment",
+            "shipping": "Tracked Delivery",
+            "guarantee": "Satisfaction Guaranteed"
+        },
+        "offers": {
+            "pack1": {
+                "name": "Discovery",
+                "features": [
+                    "1 Radar LED Bulb",
+                    "2 Year Warranty",
+                    "Installation Guide"
+                ]
+            },
+            "pack3": {
+                "name": "Traffic Areas",
+                "features": [
+                    "3 Radar LED Bulbs",
+                    "FREE Shipping",
+                    "2 Year Warranty",
+                    "Installation Guide",
+                    "Priority Support"
+                ]
+            },
+            "pack6": {
+                "name": "Full House",
+                "features": [
+                    "6 Radar LED Bulbs",
+                    "FREE Shipping",
+                    "2 Year Warranty",
+                    "Installation Guide",
+                    "Priority Support",
+                    "Free Socket Adapter"
+                ]
+            }
+        }
     }
 }

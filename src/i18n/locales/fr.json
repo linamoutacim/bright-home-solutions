@@ -76,5 +76,54 @@
             "sometimes": "Parfois",
             "rarely": "Rarement"
         }
+    },
+    "pricing": {
+        "badge": "Nos Offres",
+        "title": "Choisissez votre pack",
+        "subtitle": "Plus vous commandez, plus vous économisez. Livraison offerte dès 3 ampoules.",
+        "popular": "LE PLUS POPULAIRE",
+        "quantity": "ampoule",
+        "quantity_plural": "ampoules",
+        "unitPrice": "soit {{price}}€ l'unité",
+        "shipping": "Livraison {{price}}€",
+        "freeShipping": "Livraison OFFERTE",
+        "ctaBuy": "Acheter maintenant",
+        "ctaAdd": "Ajouter au panier",
+        "trust": {
+            "payment": "Paiement sécurisé",
+            "shipping": "Livraison suivie",
+            "guarantee": "Satisfait ou remboursé"
+        },
+        "offers": {
+            "pack1": {
+                "name": "Découverte",
+                "features": [
+                    "1 Ampoule LED Radar",
+                    "Garantie 2 ans",
+                    "Guide d'installation"
+                ]
+            },
+            "pack3": {
+                "name": "Lieux de Passage",
+                "features": [
+                    "3 Ampoules LED Radar",
+                    "Livraison GRATUITE",
+                    "Garantie 2 ans",
+                    "Guide d'installation",
+                    "Support prioritaire"
+                ]
+            },
+            "pack6": {
+                "name": "Maison Complète",
+                "features": [
+                    "6 Ampoules LED Radar",
+                    "Livraison GRATUITE",
+                    "Garantie 2 ans",
+                    "Guide d'installation",
+                    "Support prioritaire",
+                    "Douille adaptatrice offerte"
+                ]
+            }
+        }
     }
 }
