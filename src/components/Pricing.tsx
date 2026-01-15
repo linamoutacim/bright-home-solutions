@@ -94,10 +94,14 @@ const Pricing = () => {
 
               {/* Offer name */}
               <div className="mb-6 text-center">
-                <div className="mb-6 relative h-40 flex items-center justify-center overflow-hidden rounded-2xl">
-                  <img src="/offer-bulb.png" alt="Lumini Smart Bulb" className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700" />
+                <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-6 overflow-hidden rounded-[2rem]">
+                  <img
+                    src="/offer-bulb.png"
+                    alt="Lumini Smart Bulb"
+                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                  />
                   {offer.quantity > 1 && (
-                    <div className="absolute top-2 right-2 bg-accent text-accent-foreground w-10 h-10 rounded-full flex items-center justify-center font-black border-2 border-white shadow-lg z-10">
+                    <div className="absolute top-3 right-3 bg-accent text-accent-foreground w-9 h-9 rounded-full flex items-center justify-center font-black shadow-lg z-10 text-sm">
                       x{offer.quantity}
                     </div>
                   )}
