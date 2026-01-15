@@ -94,14 +94,6 @@ const Pricing = () => {
 
               {/* Offer name */}
               <div className="mb-6 text-center">
-                <div className="mb-4 relative h-24 flex items-center justify-center">
-                  <img src="/lumini-bulb.png" alt="Lumini Bulb" className="h-full object-contain" />
-                  {offer.quantity > 1 && (
-                    <div className="absolute -bottom-2 -right-2 bg-accent text-accent-foreground w-8 h-8 rounded-full flex items-center justify-center font-black border-2 border-white shadow-lg">
-                      x{offer.quantity}
-                    </div>
-                  )}
-                </div>
                 <h3 className={`text-2xl font-black mb-2 ${offer.popular ? "text-primary-foreground" : "text-foreground"}`}>
                   {offer.name}
                 </h3>
