@@ -1,0 +1,56 @@
+{
+    "header": {
+        "offers": "Our Offers",
+        "howItWorks": "How it Works",
+        "reviews": "Customer Reviews",
+        "faq": "FAQ",
+        "order": "Order Now"
+    },
+    "hero": {
+        "badge": "New: Advanced Radar Technology",
+        "title": "The light that turns on",
+        "titleAccent": "in front of you",
+        "subtitle": "Secure your home and reduce your electricity bill automatically. Without ever touching a switch.",
+        "ctaDiscover": "Discover Offer",
+        "ctaHow": "How it works?",
+        "benefit1": "Precise Radar Detection",
+        "benefit2": "Energy Saving",
+        "benefit3": "30 sec Installation"
+    },
+    "common": {
+        "excellent": "Excellent 4.8/5",
+        "satisfiedClients": "10,000+ Satisfied Customers",
+        "radarTech": "Cutting-edge Radar Tech"
+    },
+    "benefits": {
+        "badge": "Why Lumini?",
+        "title": "Technology at the service of your comfort",
+        "subtitle": "A smart bulb that adapts to your daily life",
+        "items": {
+            "radar": {
+                "title": "Radar Detection",
+                "desc": "More precise than classic infrared. Detects even slight movements through obstacles."
+            },
+            "energy": {
+                "title": "Energy Saving",
+                "desc": "Automatically turns off after 30 seconds. No more wasted electricity."
+            },
+            "easy": {
+                "title": "Easy Installation",
+                "desc": "Screws in like a regular bulb. No electrician, no construction required."
+            },
+            "night": {
+                "title": "Ideal at Night",
+                "desc": "Perfect for toilets, hallways, and stairs. No more searching for switches."
+            },
+            "seniors": {
+                "title": "Senior Safety",
+                "desc": "Prevents falls in dark stairwells. Peace of mind for the whole family."
+            },
+            "temps": {
+                "title": "2 Temperatures",
+                "desc": "Warm white for indoors, cool white for garage and basement. Adapted to every room."
+            }
+        }
+    }
+}

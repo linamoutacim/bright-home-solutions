@@ -1,0 +1,56 @@
+{
+    "header": {
+        "offers": "Nos Offres",
+        "howItWorks": "Comment ça marche ?",
+        "reviews": "Avis Clients",
+        "faq": "FAQ",
+        "order": "Commander"
+    },
+    "hero": {
+        "badge": "Nouveau : Technologie Radar Avancée",
+        "title": "La lumière qui s'allume",
+        "titleAccent": "devant vous",
+        "subtitle": "Sécurisez votre maison et réduisez votre facture d'électricité automatiquement. Sans jamais toucher un interrupteur.",
+        "ctaDiscover": "Découvrir l'offre",
+        "ctaHow": "Comment ça marche ?",
+        "benefit1": "Détection Radar Précise",
+        "benefit2": "Économie d'Énergie",
+        "benefit3": "Installation en 30 sec"
+    },
+    "common": {
+        "excellent": "Excellent 4.8/5",
+        "satisfiedClients": "10,000+ Clients satisfaits",
+        "radarTech": "Technologie Radar de pointe"
+    },
+    "benefits": {
+        "badge": "Pourquoi Lumini ?",
+        "title": "La technologie au service de votre confort",
+        "subtitle": "Une ampoule intelligente qui s'adapte à votre vie quotidienne",
+        "items": {
+            "radar": {
+                "title": "Détection Radar",
+                "desc": "Plus précis que l'infrarouge classique. Détecte même les mouvements légers à travers les obstacles."
+            },
+            "energy": {
+                "title": "Économie d'Énergie",
+                "desc": "S'éteint automatiquement après 30 secondes. Fini les lumières allumées pour rien."
+            },
+            "easy": {
+                "title": "Installation Facile",
+                "desc": "Se visse comme une ampoule classique. Pas d'électricien, pas de travaux."
+            },
+            "night": {
+                "title": "Idéale la Nuit",
+                "desc": "Parfaite pour les toilettes, couloirs et escaliers. Plus besoin de chercher l'interrupteur."
+            },
+            "seniors": {
+                "title": "Sécurité Seniors",
+                "desc": "Prévient les chutes dans les escaliers sombres. Tranquillité d'esprit pour toute la famille."
+            },
+            "temps": {
+                "title": "2 Températures",
+                "desc": "Blanc chaud pour l'intérieur, blanc froid pour garage et cave. Adaptée à chaque pièce."
+            }
+        }
+    }
+}
