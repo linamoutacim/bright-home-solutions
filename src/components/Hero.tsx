@@ -78,8 +78,8 @@ const Hero = () => {
           <div className="absolute inset-0 bg-accent/20 blur-[100px] rounded-full scale-75" />
           <div className="relative z-10 p-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] shadow-2xl overflow-hidden group">
             <img
-              src="/hero-connected.jpg"
-              alt="Lumini Connected Experience"
+              src="/hero-smart-home.png"
+              alt="Lumini Smart Home Experience"
               className="w-full h-full object-cover rounded-[2.5rem] shadow-glow transform transition-transform duration-[4s] group-hover:scale-110"
             />
             {/* Overlay gradient for depth */}
@@ -87,8 +87,8 @@ const Hero = () => {
 
             {/* Floating badge over image */}
             <div className="absolute -bottom-2 -right-2 p-5 bg-accent rounded-3xl shadow-glow animate-bounce-slow">
-              <div className="text-[10px] font-black text-accent-foreground uppercase tracking-tighter">Maîtrisez le</div>
-              <div className="text-xl font-black text-accent-foreground leading-none">Smart Control</div>
+              <div className="text-[10px] font-black text-accent-foreground uppercase tracking-tighter">Écosystème</div>
+              <div className="text-xl font-black text-accent-foreground leading-none">Smart Mode</div>
             </div>
           </div>
         </div>
