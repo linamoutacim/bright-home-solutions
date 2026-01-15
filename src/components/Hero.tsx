@@ -74,22 +74,15 @@ const Hero = () => {
         </div>
 
         {/* Right Image Content */}
-        <div className="flex-1 relative animate-float">
-          <div className="absolute inset-0 bg-accent/20 blur-[100px] rounded-full scale-75" />
-          <div className="relative z-10 p-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] shadow-2xl overflow-hidden group">
+        <div className="flex-1 relative">
+          <div className="relative z-10 overflow-hidden rounded-[2.5rem] shadow-2xl group">
             <img
               src="/hero-pro.png"
               alt="Lumini Professional Smart Control"
-              className="w-full h-full object-cover rounded-[2.5rem] shadow-glow transform transition-transform duration-[4s] group-hover:scale-110"
+              className="w-full h-full object-cover transform transition-transform duration-[4s] group-hover:scale-105"
             />
-            {/* Overlay gradient for depth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent pointer-events-none" />
-
-            {/* Floating badge over image */}
-            <div className="absolute -bottom-2 -right-2 p-5 bg-accent rounded-3xl shadow-glow animate-bounce-slow">
-              <div className="text-[10px] font-black text-accent-foreground uppercase tracking-tighter">Écosystème</div>
-              <div className="text-xl font-black text-accent-foreground leading-none">Pro Control</div>
-            </div>
+            {/* Subtle overlay for depth */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
           </div>
         </div>
 
