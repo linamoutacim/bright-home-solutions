@@ -16,58 +16,78 @@ const Hero = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
 
-      <div className="container relative z-10 flex flex-col items-center justify-center min-h-screen py-20 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm mb-8 animate-fade-in">
-          <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-          {t("hero.badge")}
-        </div>
+      <div className="container relative z-10 flex flex-col lg:flex-row items-center justify-between min-h-screen py-20 gap-12">
+        {/* Left Content */}
+        <div className="flex-1 text-center lg:text-left">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm mb-8 animate-fade-in">
+            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+            {t("hero.badge")}
+          </div>
 
-        {/* Main heading */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-4xl leading-tight mb-6 animate-slide-up">
-          {t("hero.title")}{" "}
-          <span className="text-gradient">{t("hero.titleAccent")}</span>
-        </h1>
+          {/* Main heading */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6 animate-slide-up">
+            {t("hero.title")}{" "}
+            <span className="text-gradient">{t("hero.titleAccent")}</span>
+          </h1>
 
-        {/* Subheading */}
-        <p className="text-lg md:text-xl text-white/70 max-w-2xl mb-10 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-          {t("hero.subtitle")}
-        </p>
+          {/* Subheading */}
+          <p className="text-lg md:text-xl text-white/70 max-w-2xl mb-10 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+            {t("hero.subtitle")}
+          </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-          <Button
-            size="lg"
-            onClick={scrollToOffers}
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-lg rounded-xl shadow-glow transition-all duration-300 hover:scale-105"
-          >
-            {t("hero.ctaDiscover")}
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={() => navigate("/comment-ca-marche")}
-            className="bg-transparent border-accent text-accent hover:bg-accent/10 px-8 py-6 text-lg rounded-xl transition-all duration-300"
-          >
-            {t("hero.ctaHow")}
-          </Button>
-        </div>
-
-        {/* Quick benefits */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl animate-slide-up" style={{ animationDelay: "0.3s" }}>
-          {[
-            { icon: Shield, text: t("hero.benefit1") },
-            { icon: Zap, text: t("hero.benefit2") },
-            { icon: Clock, text: t("hero.benefit3") },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-3 px-5 py-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10"
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+            <Button
+              size="lg"
+              onClick={scrollToOffers}
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-lg rounded-xl shadow-glow transition-all duration-300 hover:scale-105"
             >
-              <item.icon className="w-5 h-5 text-accent" />
-              <span className="text-white/90 text-sm font-medium">{item.text}</span>
+              {t("hero.ctaDiscover")}
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => navigate("/comment-ca-marche")}
+              className="bg-transparent border-accent text-accent hover:bg-accent/10 px-8 py-6 text-lg rounded-xl transition-all duration-300"
+            >
+              {t("hero.ctaHow")}
+            </Button>
+          </div>
+
+          {/* Quick benefits */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+            {[
+              { icon: Shield, text: t("hero.benefit1") },
+              { icon: Zap, text: t("hero.benefit2") },
+              { icon: Clock, text: t("hero.benefit3") },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-3 px-5 py-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10"
+              >
+                <item.icon className="w-5 h-5 text-accent" />
+                <span className="text-white/90 text-sm font-medium">{item.text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Right Image Content */}
+        <div className="flex-1 relative animate-float">
+          <div className="absolute inset-0 bg-accent/20 blur-[100px] rounded-full scale-75" />
+          <div className="relative z-10 p-4 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] shadow-2xl">
+            <img
+              src="/lumini-bulb.png"
+              alt="Lumini Smart Bulb"
+              className="w-full max-w-md mx-auto rounded-[2.5rem] shadow-glow transform transition-transform duration-700 hover:rotate-2 hover:scale-105"
+            />
+            {/* Floating badge over image */}
+            <div className="absolute -bottom-6 -right-6 p-6 bg-accent rounded-3xl shadow-glow animate-bounce-slow">
+              <div className="text-sm font-black text-accent-foreground uppercase tracking-tighter">Premium</div>
+              <div className="text-2xl font-black text-accent-foreground leading-none">Radar v2</div>
             </div>
-          ))}
+          </div>
         </div>
 
         {/* Scroll indicator */}

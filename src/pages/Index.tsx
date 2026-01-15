@@ -39,54 +39,98 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Persuasive Point / Why Us */}
-      <section className="py-20 bg-primary/5">
+      {/* Realistic Presentation Section 1: Lifestyle */}
+      <section className="py-24 bg-white overflow-hidden">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 animate-slide-up">
-              <div className="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-bold tracking-wider uppercase">
-                Bienvenue dans le Futur
+          <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="flex-1 space-y-8 animate-slide-up">
+              <div className="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-black tracking-wider uppercase">
+                Vivez le Futur
               </div>
               <h2 className="text-3xl md:text-5xl font-black text-foreground leading-tight">
-                Une technologie qui ne se contente pas d'éclairer. <br />
-                <span className="text-accent underline decoration-accent/30 underline-offset-8 transition-all hover:decoration-accent">Elle veille sur vous.</span>
+                Une technologie qui <br />
+                <span className="text-accent underline decoration-accent/30 underline-offset-8">s'adapte à votre vie.</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Pourquoi continuer à tâtonner dans le noir ou à gaspiller de l'énergie ? <br />
-                <strong>Lumini</strong> n'est pas une simple ampoule. C'est un concierge invisible qui réduit vos factures de 80% tout en sécurisant vos proches grâce à sa détection radar millimétrée.
+                Finis les couloirs sombres ou les mains encombrées devant un interrupteur. <strong>Lumini</strong> détecte votre présence à travers les obstacles pour un confort absolu. On rentre, ça s'allume. On sort, ça s'éteint.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 bg-success/20 text-success rounded-full flex items-center justify-center">
-                    <CheckCircle2 className="w-3.5 h-3.5" />
+              <div className="flex items-center gap-6 pt-4">
+                <div className="flex -space-x-3">
+                  {[1, 2, 3, 4].map(i => (
+                    <div key={i} className="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-secondary">
+                      <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="User" />
+                    </div>
+                  ))}
+                  <div className="w-12 h-12 rounded-full border-4 border-white bg-accent flex items-center justify-center text-accent-foreground text-xs font-bold font-black">
+                    +10k
                   </div>
-                  <span className="text-sm font-semibold opacity-80">Économies Immédiates</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 bg-success/20 text-success rounded-full flex items-center justify-center">
-                    <CheckCircle2 className="w-3.5 h-3.5" />
-                  </div>
-                  <span className="text-sm font-semibold opacity-80">Sécurité 24/7</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 bg-success/20 text-success rounded-full flex items-center justify-center">
-                    <CheckCircle2 className="w-3.5 h-3.5" />
-                  </div>
-                  <span className="text-sm font-semibold opacity-80">Contrôle Smartphone (On/Off, Intensité)</span>
+                <div className="text-sm font-bold text-foreground/70">
+                  Adopté par des milliers <br /> de foyers en France.
                 </div>
               </div>
             </div>
-            <div className="relative group animate-slide-up" style={{ animationDelay: "0.2s" }}>
+            <div className="flex-1 relative group animate-slide-up" style={{ animationDelay: "0.2s" }}>
               <div className="absolute inset-0 bg-accent/20 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700" />
-              <div className="relative border-8 border-white rounded-[2rem] shadow-2xl overflow-hidden aspect-video bg-navy flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
-                    <Zap className="w-8 h-8 text-accent" />
+              <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
+                <img
+                  src="/lifestyle.png"
+                  alt="Lumini in home"
+                  className="w-full object-cover aspect-[4/5] hover:scale-110 transition-transform duration-[2s]"
+                />
+                <div className="absolute bottom-8 left-8 right-8 p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl">
+                  <p className="text-white font-medium italic">
+                    "Une ambiance chaleureuse qui vous accueille dès votre arrivée."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Realistic Presentation Section 2: App Control */}
+      <section className="py-24 bg-primary/5 overflow-hidden">
+        <div className="container">
+          <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
+            <div className="flex-1 space-y-8 animate-slide-up">
+              <div className="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-black tracking-wider uppercase">
+                Un contrôle total
+              </div>
+              <h2 className="text-3xl md:text-5xl font-black text-foreground leading-tight">
+                La puissance au <br />
+                <span className="text-accent underline decoration-accent/30 underline-offset-8">bout des doigts.</span>
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Ajustez la sensibilité, programmez des horaires ou changez la température de couleur directement depuis votre smartphone. Une interface intuitive conçue pour simplifier votre quotidien.
+              </p>
+              <div className="space-y-4 pt-4">
+                {[
+                  "Contrôle à distance Illimité",
+                  "Programmation Intelligente",
+                  "Économie d'Énergie Visible",
+                ].map((text, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <div className="w-6 h-6 bg-accent/20 text-accent rounded-full flex items-center justify-center">
+                      <CheckCircle2 className="w-4 h-4" />
+                    </div>
+                    <span className="font-bold opacity-80">{text}</span>
                   </div>
-                  <h3 className="text-white font-bold text-xl mb-2 italic">"Le dernier interrupteur que vous aurez jamais touché."</h3>
-                  <div className="flex justify-center gap-1">
-                    {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-4 h-4 text-accent fill-accent" />)}
-                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="flex-1 relative group animate-slide-up" style={{ animationDelay: "0.2s" }}>
+              <div className="absolute inset-0 bg-accent/20 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700" />
+              <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
+                <img
+                  src="/app-control.png"
+                  alt="Lumini App Control"
+                  className="w-full object-cover aspect-[4/5] hover:scale-110 transition-transform duration-[2s]"
+                />
+                <div className="absolute top-8 right-8">
+                  <span className="bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-black uppercase shadow-glow animate-pulse">
+                    Nouveau : App V2.0
+                  </span>
                 </div>
               </div>
             </div>
