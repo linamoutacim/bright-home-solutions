@@ -52,5 +52,29 @@
                 "desc": "Warm white for indoors, cool white for garage and basement. Adapted to every room."
             }
         }
+    },
+    "comparison": {
+        "badge": "The Match",
+        "title": "Why choose",
+        "subtitle": "Compare and see the difference for yourself. Lumini redefines home lighting.",
+        "footer": "\"Lumini radar detects 360° movement even through curtains, where infrared systematically fails.\"",
+        "columns": {
+            "features": "Features",
+            "lumini": "Lumini",
+            "infrared": "Infrared",
+            "classic": "Classic"
+        },
+        "features": {
+            "radar": "Radar Detection (360°)",
+            "obstacles": "Detection Through Obstacles",
+            "smartphone": "Smartphone Control",
+            "installation": "Hassle-free Installation",
+            "savings": "Energy Saving (>80%)",
+            "lifespan": "10+ Years Lifespan"
+        },
+        "labels": {
+            "sometimes": "Sometimes",
+            "rarely": "Rarely"
+        }
     }
 }

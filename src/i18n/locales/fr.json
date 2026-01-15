@@ -52,5 +52,29 @@
                 "desc": "Blanc chaud pour l'intérieur, blanc froid pour garage et cave. Adaptée à chaque pièce."
             }
         }
+    },
+    "comparison": {
+        "badge": "Le Match",
+        "title": "Pourquoi choisir",
+        "subtitle": "Comparez et voyez la différence par vous-même. Lumini redéfinit l'éclairage domestique.",
+        "footer": "\"Le radar Lumini détecte les mouvements à 360° même à travers des rideaux, là où l'infrarouge échoue systématiquement.\"",
+        "columns": {
+            "features": "Fonctionnalités",
+            "lumini": "Lumini",
+            "infrared": "Infrarouge",
+            "classic": "Classique"
+        },
+        "features": {
+            "radar": "Détection Radar (360°)",
+            "obstacles": "Détection à travers les obstacles",
+            "smartphone": "Contrôle via Smartphone",
+            "installation": "Installation sans travaux",
+            "savings": "Économie d'énergie (>80%)",
+            "lifespan": "Durée de vie 10 ans +"
+        },
+        "labels": {
+            "sometimes": "Parfois",
+            "rarely": "Rarement"
+        }
     }
 }
