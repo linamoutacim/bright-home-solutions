@@ -75,7 +75,7 @@ const Hero = () => {
 
         {/* Right Image Content */}
         <div className="flex-1 relative">
-          <div className="relative z-10 overflow-hidden rounded-[2.5rem] shadow-2xl group">
+          <div className="relative z-10 overflow-hidden group">
             <img
               src="/hero-pro.png"
               alt="Lumini Professional Smart Control"
