@@ -94,6 +94,14 @@ const Pricing = () => {
 
               {/* Offer name */}
               <div className="mb-6 text-center">
+                <div className="mb-6 relative h-40 flex items-center justify-center overflow-hidden rounded-2xl">
+                  <img src="/offer-bulb.png" alt="Lumini Smart Bulb" className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700" />
+                  {offer.quantity > 1 && (
+                    <div className="absolute top-2 right-2 bg-accent text-accent-foreground w-10 h-10 rounded-full flex items-center justify-center font-black border-2 border-white shadow-lg z-10">
+                      x{offer.quantity}
+                    </div>
+                  )}
+                </div>
                 <h3 className={`text-2xl font-black mb-2 ${offer.popular ? "text-primary-foreground" : "text-foreground"}`}>
                   {offer.name}
                 </h3>
