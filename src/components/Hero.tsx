@@ -19,7 +19,7 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="LumiSense Background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-right"
         />
         {/* Premium Overlay: dark gradient from left to right for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0c1221] via-[#0c1221]/80 to-transparent" />
