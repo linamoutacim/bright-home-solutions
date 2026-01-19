@@ -15,14 +15,14 @@ const Hero = () => {
   return (
     <section className="relative min-h-[95vh] flex items-center overflow-hidden bg-[#0c1221]">
       <div className="container relative z-10 pt-20 pb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="flex flex-col lg:flex-row gap-8 items-center">
           {/* Left side - Text content */}
-          <div className="text-left animate-fade-in">
+          <div className="text-left animate-fade-in lg:w-1/2">
             <div className="inline-block px-3 py-1 rounded-md bg-[#ffffff15] border border-[#ffffff20] text-white text-xs font-bold tracking-wider mb-6">
               {t("hero.badge")}
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] mb-6">
               {t("hero.title")}{" "}
               <span className="text-[#D4A017]">{t("hero.titleAccent")}</span>
             </h1>
@@ -72,11 +72,11 @@ const Hero = () => {
           </div>
 
           {/* Right side - Product image */}
-          <div className="flex justify-end items-center">
+          <div className="lg:w-1/2 flex justify-end">
             <img
               src={heroImage}
               alt="LumiSense Ampoule LED"
-              className="w-full max-w-md lg:max-w-lg xl:max-w-xl h-auto object-contain drop-shadow-[0_0_80px_rgba(212,160,23,0.4)]"
+              className="w-[500px] h-[500px] object-contain drop-shadow-[0_0_80px_rgba(212,160,23,0.5)]"
             />
           </div>
         </div>
