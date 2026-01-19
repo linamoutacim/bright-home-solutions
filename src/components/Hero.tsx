@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import heroImage from "@/assets/hero-lumisense.jpg";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ const Hero = () => {
       {/* Full Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-image.png"
+          src={heroImage}
           alt="LumiSense Background"
           className="w-full h-full object-cover"
         />
