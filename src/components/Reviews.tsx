@@ -25,7 +25,7 @@ const Reviews = () => {
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-[#f9fafb] rounded-2xl p-8 flex flex-col"
+              className="bg-transparent rounded-2xl p-8 flex flex-col transition-all duration-300 hover:bg-black/5"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">

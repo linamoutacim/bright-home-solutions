@@ -56,7 +56,10 @@
         "shipping": "Livraison {{price}}€",
         "freeShipping": "Livraison Offerte",
         "ctaSelect": "Choisir ce pack",
-        "ctaOrder": "Commander (Best-seller)",
+        "ctaOrder": "Commander",
+        "ctaAddToCart": "Ajouter au panier",
+        "ctaBuyNow": "Acheter maintenant",
+        "addedToCart": "Produit ajouté au panier !",
         "unitPrice": "L'unité",
         "offers": {
             "discovery": {

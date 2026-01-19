@@ -38,7 +38,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#f9fafb]">
+    <section className="py-24 bg-white">
       <div className="container">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -55,7 +55,7 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="p-10 rounded-3xl bg-white border border-[#f1f1f1] hover:shadow-xl transition-all duration-300"
+              className="p-10 rounded-3xl bg-transparent border-none transition-all duration-300 hover:bg-black/5"
             >
               <div className="w-16 h-16 rounded-2xl bg-[#D4A017]/10 flex items-center justify-center mb-8">
                 <benefit.icon className="w-8 h-8 text-[#D4A017]" />

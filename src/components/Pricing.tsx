@@ -3,13 +3,14 @@ import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 
 const Pricing = () => {
   const { t } = useTranslation();
   const { addToCart } = useCart();
   const navigate = useNavigate();
 
-  const handleAddToCart = (offer: any) => {
+  const handleAddToCart = (offer: any, checkout = false) => {
     addToCart({
       id: offer.id,
       name: offer.name,
@@ -17,7 +18,12 @@ const Pricing = () => {
       quantity: 1,
       itemQuantity: offer.quantity,
     });
-    navigate("/checkout");
+
+    if (checkout) {
+      navigate("/checkout");
+    } else {
+      toast.success(t("pricing.addedToCart"));
+    }
   };
 
   const offers = [
@@ -59,7 +65,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="offres" className="py-24 bg-[#f9fafb]">
+    <section id="offres" className="py-24 bg-white">
       <div className="container px-4">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -77,8 +83,8 @@ const Pricing = () => {
             <div
               key={offer.id}
               className={`relative rounded-3xl p-10 flex flex-col transition-all duration-300 ${offer.popular
-                ? "bg-white border-2 border-[#D4A017] shadow-xl scale-105 z-10"
-                : "bg-white border border-[#f1f1f1] hover:shadow-lg"
+                ? "bg-transparent border-2 border-[#D4A017] scale-105 z-10"
+                : "bg-transparent border-none"
                 }`}
             >
               {offer.popular && (
@@ -88,11 +94,11 @@ const Pricing = () => {
               )}
 
               {/* Added Image */}
-              <div className="mb-6 rounded-2xl overflow-hidden aspect-[4/3] bg-white flex items-center justify-center">
+              <div className="mb-6 rounded-2xl overflow-hidden aspect-[4/3] bg-transparent flex items-center justify-center">
                 <img
                   src={offer.image}
                   alt={offer.name}
-                  className="w-full h-full object-contain transform hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-contain transform hover:scale-110 transition-transform duration-500 mix-blend-multiply"
                 />
               </div>
 
@@ -130,15 +136,24 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <Button
-                onClick={() => handleAddToCart(offer)}
-                className={`w-full py-7 text-lg font-bold rounded-full transition-all duration-300 ${offer.popular
-                  ? "bg-[#D4A017] hover:bg-[#B8860B] text-[#0c1221]"
-                  : "bg-white hover:bg-gray-50 text-[#0c1221] border border-gray-200"
-                  }`}
-              >
-                {offer.cta}
-              </Button>
+              <div className="flex flex-col gap-3">
+                <Button
+                  onClick={() => handleAddToCart(offer, true)}
+                  className={`w-full py-7 text-lg font-bold rounded-full transition-all duration-300 ${offer.popular
+                    ? "bg-[#D4A017] hover:bg-[#B8860B] text-[#0c1221]"
+                    : "bg-[#0c1221] hover:bg-gray-900 text-white"
+                    }`}
+                >
+                  {t("pricing.ctaBuyNow")}
+                </Button>
+                <Button
+                  variant="outline"
+                  onClick={() => handleAddToCart(offer)}
+                  className="w-full py-7 text-lg font-bold rounded-full border-gray-200 hover:bg-gray-50 text-[#0c1221] transition-all duration-300"
+                >
+                  {t("pricing.ctaAddToCart")}
+                </Button>
+              </div>
             </div>
           ))}
         </div>
