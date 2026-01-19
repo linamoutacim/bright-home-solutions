@@ -20,8 +20,8 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "bg-[#0c1221]/90 backdrop-blur-md py-3 border-b border-white/5"
-          : "bg-transparent py-6"
+        ? "bg-[#0c1221]/90 backdrop-blur-md py-3 border-b border-white/5"
+        : "bg-transparent py-6"
         }`}
     >
       <div className="container flex items-center justify-between px-4">
@@ -31,7 +31,7 @@ const Header = () => {
             <div className="w-2 h-2 rounded-full bg-[#D4A017]"></div>
           </div>
           <span className="text-xl font-bold text-white tracking-tight">
-            LumiSense
+            Lumini
           </span>
         </Link>
 

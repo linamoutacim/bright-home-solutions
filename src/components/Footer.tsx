@@ -12,10 +12,10 @@ const Footer = () => {
               <span className="w-6 h-6 rounded-full border-2 border-[#D4A017] flex items-center justify-center">
                 <span className="w-2 h-2 rounded-full bg-[#D4A017]"></span>
               </span>
-              LumiSense
+              Lumini
             </h3>
             <p className="text-white/50 text-xs leading-relaxed max-w-xs mb-8">
-              LumiSense redonne à l'éclairage domestique en alliant technologie radar, économies d'énergie et design moderne. Illuminez votre vie intelligemment.
+              Lumini redonne à l'éclairage domestique en alliant technologie radar, économies d'énergie et design moderne. Illuminez votre vie intelligemment.
             </p>
             <div className="flex gap-4">
               <div className="w-8 h-8 rounded-md bg-white/10 flex items-center justify-center cursor-pointer hover:bg-white/20 transition-colors">
@@ -58,7 +58,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-white/30 text-[10px] uppercase font-bold tracking-widest">
-            © 2024 LumiSense. TOUS DROITS RÉSERVÉS.
+            © 2024 Lumini. TOUS DROITS RÉSERVÉS.
           </p>
           <div className="flex items-center gap-4 text-white/30 text-[10px] font-bold">
             PAIEMENT SÉCURISÉ

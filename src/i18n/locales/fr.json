@@ -6,13 +6,13 @@
         "order": "Commander"
     },
     "hero": {
-        "badge": "NOUVEAU",
-        "title": "La lumière qui s'allume",
-        "titleAccent": "devant vous",
-        "subtitle": "Éclairez votre chemin automatiquement grâce à la détection radar 360°. Une sécurité accrue et 80% d'économie d'énergie pour votre maison.",
-        "ctaOrder": "Commander - 14.90€",
-        "ctaLearnMore": "En savoir plus",
-        "socialProof": "Recommandé par +100 clients"
+        "badge": "OFFRE DE LANCEMENT -40%",
+        "title": "Ne cherchez plus jamais",
+        "titleAccent": "l'interrupteur",
+        "subtitle": "Réduisez vos factures de 80% et sécurisez vos proches avec Lumini. L'ampoule intelligente à détection radar qui s'adapte à votre vie, pas l'inverse.",
+        "ctaOrder": "Commander maintenant",
+        "ctaLearnMore": "Voir les offres",
+        "socialProof": "Déjà adopté par +10,000 foyers"
     },
     "common": {
         "excellent": "Excellent 4.8/5",
@@ -20,7 +20,7 @@
         "radarTech": "Technologie Radar 360°"
     },
     "benefits": {
-        "title": "Pourquoi choisir LumiSense ?",
+        "title": "Pourquoi choisir Lumini ?",
         "subtitle": "Une technologie de pointe condensée dans une ampoule standard pour simplifier votre quotidien.",
         "items": {
             "radar": {
@@ -33,7 +33,7 @@
             },
             "easy": {
                 "title": "Installation Facile",
-                "desc": "Pas de travaux, pas de WiFi. Vissez simplement LumiSense sur n'importe quelle douille E27 standard."
+                "desc": "Pas de travaux, pas de WiFi. Vissez simplement Lumini sur n'importe quelle douille E27 standard."
             },
             "instant": {
                 "title": "Allumage Instantané",
@@ -64,7 +64,7 @@
                 "subtitle": "Pour essayer",
                 "price": "14.90€",
                 "features": [
-                    "1 Ampoule LumiSense",
+                    "1 Ampoule Lumini",
                     "Garantie 2 ans",
                     "Satisfait ou remboursé"
                 ]
@@ -75,7 +75,7 @@
                 "price": "29.90€",
                 "savings": "Économisez 15%",
                 "features": [
-                    "3 Ampoules LumiSense",
+                    "3 Ampoules Lumini",
                     "Livraison Prioritaire",
                     "Garantie 2 ans"
                 ]
@@ -86,7 +86,7 @@
                 "price": "49.90€",
                 "savings": "Économisez 45%",
                 "features": [
-                    "6 Ampoules LumiSense",
+                    "6 Ampoules Lumini",
                     "Livraison Offerte",
                     "Garantie 2 ans"
                 ]

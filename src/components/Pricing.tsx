@@ -30,6 +30,7 @@ const Pricing = () => {
       features: t("pricing.offers.discovery.features", { returnObjects: true }) as string[],
       popular: false,
       cta: t("pricing.ctaSelect"),
+      image: "/offer-1-bulb.png",
     },
     {
       id: 2,
@@ -41,6 +42,7 @@ const Pricing = () => {
       popular: true,
       savings: t("pricing.offers.comfort.savings"),
       cta: t("pricing.ctaOrder"),
+      image: "/offer-3-bulbs.png",
     },
     {
       id: 3,
@@ -52,6 +54,7 @@ const Pricing = () => {
       popular: false,
       savings: t("pricing.offers.home.savings"),
       cta: t("pricing.ctaSelect"),
+      image: "/offer-6-bulbs.png",
     },
   ];
 
@@ -74,8 +77,8 @@ const Pricing = () => {
             <div
               key={offer.id}
               className={`relative rounded-3xl p-10 flex flex-col transition-all duration-300 ${offer.popular
-                  ? "bg-white border-2 border-[#D4A017] shadow-xl scale-105 z-10"
-                  : "bg-white border border-[#f1f1f1] hover:shadow-lg"
+                ? "bg-white border-2 border-[#D4A017] shadow-xl scale-105 z-10"
+                : "bg-white border border-[#f1f1f1] hover:shadow-lg"
                 }`}
             >
               {offer.popular && (
@@ -83,6 +86,15 @@ const Pricing = () => {
                   {t("pricing.popular")}
                 </div>
               )}
+
+              {/* Added Image */}
+              <div className="mb-6 rounded-2xl overflow-hidden aspect-[4/3] bg-white flex items-center justify-center">
+                <img
+                  src={offer.image}
+                  alt={offer.name}
+                  className="w-full h-full object-contain transform hover:scale-110 transition-transform duration-500"
+                />
+              </div>
 
               <div className="mb-8 text-center flex flex-col">
                 <h3 className="text-2xl font-bold text-[#0c1221] mb-1">
@@ -121,8 +133,8 @@ const Pricing = () => {
               <Button
                 onClick={() => handleAddToCart(offer)}
                 className={`w-full py-7 text-lg font-bold rounded-full transition-all duration-300 ${offer.popular
-                    ? "bg-[#D4A017] hover:bg-[#B8860B] text-[#0c1221]"
-                    : "bg-white hover:bg-gray-50 text-[#0c1221] border border-gray-200"
+                  ? "bg-[#D4A017] hover:bg-[#B8860B] text-[#0c1221]"
+                  : "bg-white hover:bg-gray-50 text-[#0c1221] border border-gray-200"
                   }`}
               >
                 {offer.cta}
